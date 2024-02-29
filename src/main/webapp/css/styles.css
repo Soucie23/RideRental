@@ -1,0 +1,26 @@
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.product-image {
+  flex: 0 0 50%;
+  margin-bottom: 20px;
+}
+
+.product-info {
+  flex: 0 0 50%;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .product-details {
+    flex-direction: column;
+  }
+
+  .product-image,
+  .product-info {
+    flex: 1 1 100%;
+  }
+}
